@@ -60,7 +60,10 @@ install_dtitk = function(tarfile, verbose = TRUE) {
 
   outfiles = file.path(dti_fol, outfiles)
 
-  file.remove(outfiles)
+  fe = file.exists(outfiles)
+  if (any(fe)) {
+    file.remove(outfiles[fe])
+  }
   copied = file.copy(from = files, to = outfiles, overwrite = TRUE)
 
   return(all(copied))
