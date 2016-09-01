@@ -2,3 +2,5 @@
 
 export(download_dtitk)
 export(install_dtitk)
+importFrom(utils,browseURL)
+importFrom(utils,untar)

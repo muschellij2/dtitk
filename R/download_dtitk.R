@@ -3,6 +3,7 @@
 #'
 #' @param os Operating system to download
 #' @return NULL
+#' @importFrom utils browseURL
 #' @export
 download_dtitk = function(os = c("osx", "linux")) {
   os = match.arg(os)

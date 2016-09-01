@@ -3,6 +3,8 @@
 #' @param tarfile Tarball file (with extension \code{.tar.gz})
 #' @param verbose Print output of \code{untar}
 #' @return Logical indicating files were there
+#' @importFrom utils untar
+#'
 #' @export
 install_dtitk = function(tarfile, verbose = TRUE) {
   tfile = tempfile()
