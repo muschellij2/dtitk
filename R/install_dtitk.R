@@ -7,9 +7,9 @@
 #'
 #' @export
 install_dtitk = function(tarfile, verbose = TRUE) {
-  tfile = tempfile()
-  exdir = file.path(tfile, "dtitk")
-  dir.create(exdir)
+  exdir = tempfile()
+  # exdir = file.path(tfile, "dtitk")
+  # dir.create(exdir, showWarnings = ALSE)
 
 
 
